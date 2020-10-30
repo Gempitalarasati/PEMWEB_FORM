@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <form method="POST" action="/projects/1">
+        <h1 align="center" style="background-color: lightblue;">PENDAFTARAN</h1>
+        <fieldset style="background-color: aliceblue;" id="Data_Pribadi">
+            <legend>Data Pribadi</legend>
+            <ol>
+                 <li>
+                     <label for="name">Nama</label>
+                     <input type="text" name="nama" id="nama">
+                 </li>
+                 <br/>
+                 <li>
+                     <label for="birth">Tempat, Tanggal Lahir</label>
+                     <input type="date" name="Tempat_,Tanggal_Lahir" id="Tempat_,Tanggal_Lahir" value="2020-10-28">
+                 </li>
+                 <br/>
+                 <li>
+                     <label>Jenis Kelamin</label>
+                     <select for="Jenis_kelamin">
+                         <option value="">---pilih---</option>
+                         <option value="Laki_-_laki">Laki-laki</option>
+                         <option value="Perempuan">Perempuan</option>
+                    </select>
+                 </li>
+                 <br/>
+                 <li>
+                    <label>Agama</label>
+                    <select for="Agama">
+                        <option value="">---pilih---</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                        <option value="Lain_-_lain">Lain-lain</option>
+                    </select>
+                 </li>
+                 <br/>
+                 <li>
+                     <label for="Warna_Batik">Warna Batik</label>
+                     <input type="color" name="Warna_Batik" id="Warna_Batik">
+                 </li>
+                 <li>
+                     <div>
+                         <label>Alamat</label>
+                         <div>
+                             <textarea name="Alamat" rows="4" cols="30"></textarea>
+                         </div>
+                     </div>
+                 </li>
+            </ol>
+            <br/>
+        </fieldset>
+        <br/>
+        <fieldset style="background-color: aliceblue;" id="Kontak_Pribadi">
+            <legend>Kontak Pribadi</legend>
+            <ol>
+                <li>
+                    <label for="No._Handphone">No. Handphone</label>
+                    <input type="tel" name="No._Handphone" id="No._Handphone">
+                </li>
+                <br/>
+                <li>
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email">
+                </li>
+            </ol>
+        </fieldset>
+        <br/>
+        <fieldset style="background-color:aliceblue;" id="Data_Sekolah_Asal">
+            <legend>Data Sekolah Asal</legend>
+            <ol>
+                <li>
+                    <label for="Nama_Sekolah">Nama Sekolah</label>
+                    <input type="text" name="Nama_Sekolah" id="Nama_Sekolah">
+                </li>
+                <br/>
+                <li>
+                    <label for="Tahun_Lulus">Tahun Lulus</label>
+                    <input type="number" name="Tahun_Lulus" id="Tahun_Lulus">
+                </li>
+                <br/>
+                <li>
+                    <div>
+                        <label>Alamat Sekolah</label>
+                        <div>
+                            <textarea name="Alamat_Sekolah" rows="4" cols="30"></textarea>
+                        </div>
+                    </div>
+                </li>
+            </ol>  
+        </fieldset>
+        <br/>
+        <fieldset style="background-color:aliceblue;" id="Pendaftaran_Program">
+            <legend>Pendaftaran Program</legend>
+            <ol>
+                <li>
+                    <label>Program Pilihan</label><br/>
+                    <input type="checkbox" id="Program_Pilihan" name="Program_Pilihan" value="Bahasa_Inggris">
+                    <label for="Program_Pilihan">Bahasa Inggris</label><br>
+                    <input type="checkbox" id="Program_Pilihan" name="Program_Pilihan" value="Bahasa_Arab">
+                    <label for="Program_Pilihan">Bahasa_Arab</label><br>
+                    <input type="checkbox" id="Program_Pilihan" name="Program_Pilihan" value="Bahasa_Jepang">
+                    <label for="Program_Pilihan">Bahasa Jepang</label>
+                </li>
+                <br/>
+                <li>
+                    <label>Level Program</label><br/>
+                    <input type="radio" id="Mudah" name="Level_Program" value="Mudah">
+                    <label for="Mudah">Mudah</label><br/>
+                    <input type="radio" id="Medium" name="Level_Pilihan" value="Medium">
+                    <label for="Medium">Medium</label><br/>
+                    <input type="radio" id="Sulit" name="Program_Pilihan" value="Sulit">
+                    <label for="Sulit">Sulit</label><br/>
+                </li>
+            </ol>  
+        </fieldset>
+        <br/>
+        <input type="submit" value="submit">
+    </form>
+</html>
